@@ -20,9 +20,6 @@ def position_taken?(board, position)
  elsif board[position.to_i - 1] == "X" || board[position.to_i] == "O"
    return true
  end
-enddef move( board, position, char="X")
-board[(position.to_i - 1.to_i)] = char
-display_board(board)
 end
 
 def move( board, position, char="X")
