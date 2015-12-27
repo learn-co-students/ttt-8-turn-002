@@ -9,6 +9,8 @@ end
 def valid_move?( board, position )
   if position < "1" or position > "9"
     return false
+  elsif position.to_i < 1 or position.to_i > 9
+    return false
   end
 
   p = position.to_i - 1
