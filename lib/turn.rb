@@ -8,7 +8,7 @@ end
 
 def valid_move?(board, position)
   position = position.to_i - 1
-  if position >= 0 && position <= 9 && position_taken?(board, position) == false
+  if position >= 0 && position <= 8 && position_taken?(board, position) == false
     return true
   else return false
   end
@@ -23,7 +23,6 @@ def move(board, position, value = "X")
 end
 
 def turn(board)
-  display_board(board)
   puts "Please enter 1-9:"
   position = gets.strip
   if valid_move?(board, position)
