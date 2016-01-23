@@ -1,1 +1,10 @@
 #!/usr/bin/env ruby
+
+#this goes up a directory, then back into lib to access methods inside turn.rb
+require_relative '../lib/turn'
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+turn(board)
