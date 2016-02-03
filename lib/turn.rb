@@ -42,7 +42,9 @@ def turn(board)
 
     move(board, input)
     else
+      puts "You're killing me Smalls, really???"
       turn(board)
+
     end
 display_board(board)
  end
