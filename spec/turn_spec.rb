@@ -119,4 +119,3 @@ describe './lib/turn.rb' do
       expect(output).to include("   |   |   ")
     end
   end
-end
